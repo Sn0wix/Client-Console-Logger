@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "client-console-logger",
+	"version": "${version}",
+	"name": "Client Console Logger",
+	"description": "Opens a console that logs the client output.",
+	"authors": [
+		"Sn0wix_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/client-console-logger/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"net.sn0wix_.clientConsoleLogger.ClientConsoleLogger"
+		]
+	},
+	"mixins": [
+		"client-console-logger.mixins.json"
+	],
+	"depends": {
+		"java": ">=17"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
